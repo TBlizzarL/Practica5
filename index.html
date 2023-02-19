@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro-Mi Web</title>
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <style>
+        .form{
+            width:340px;
+            height:850px;
+            background:#e6e6e6;
+            border-radius:8px;
+            box-shadow:0 0 40px -10px #000;
+            margin:calc(50vh - 220px) auto;
+            padding:20px 30px;
+            max-width:calc(100vw - 40px);
+            box-sizing:border-box;
+            font-family:'Montserrat',sans-serif;
+            position:relative
+        }
+        h2{
+            margin:10px 0;
+            padding-bottom:10px;
+            width:180px;
+            color:#78788c;
+            border-bottom:3px solid #78788c
+        }
+        input{
+            padding:10px;
+            box-sizing:border-box;
+            background:none;
+            outline:none;
+            resize:none;
+            border:0;
+            font-family:'Montserrat',sans-serif;
+            transition:all .3s;
+            border-bottom:2px solid #bebed2
+        }
+        input:focus{
+            border-bottom:2px solid #78788c
+        }
+        p:before{
+            content:attr(type);
+            display:block;
+            margin:20px 0 0;font-size:14px;
+            color:#5a5a5a
+        }
+        button{
+            border-radius: 15%;
+            float:right;
+            padding:8px 12px;
+            margin:8px 0 0;
+            font-family:'Montserrat',sans-serif;
+            border:2px solid #78788c;
+            background:0;color:#6e5a65;
+            cursor:pointer;
+            transition:all .3s
+            
+        }
+        button:hover{
+            background:#ff62bb;
+            color:#fff
+        }
+        div{
+            content:'Hi';
+            position:absolute;
+            bottom:-15px;right:-20px;
+            background:#50505a;
+            color:#fff;
+            width:320px;
+            padding:16px 4px 16px 0;
+            border-radius:6px;
+            font-size:13px;
+            box-shadow:10px 10px 40px -14px #000
+        }
+        span{
+            margin:0 5px 0 15px
+        }
+        
+        </style>
+</head>
+<body>
+    <form method="get" action="gets.php" name="" class="form">
+        <h2 style="color:rgb(0, 0, 0);
+        font-family: arial;">Formulario Personal</h2>
+        
+       <P style="color:rgb(0, 0, 0);
+       font-family: arial;">APELLIDO PATERNOS</P> 
+        <input type="text" min="50" name="ApellidoPA" required="true">
+        <P style="color:rgb(0, 0, 0);
+       font-family: arial;">APELLIDO MATERNO</P> 
+
+        <input type="text" min="50" name="ApellidoMA" required="true">
+        <P style="color:rgb(0, 0, 0);
+       font-family: arial;">NOMBRE</P> 
+        <input type="text" min="50" name="Name" required="true">
+        <br>
+        <br>
+        Genero
+        <br>
+        <br>
+        <input type="radio" name="Sexo" value="1" required="true" /> Hombre
+        <input type="radio" name="Sexo" value="2" required="true"  /> Mujer
+        <br>
+        <br>
+        Deseo recibir información sobre novedades y 
+        ofertas
+        <br>
+        <br>
+        <input type="checkbox" checked>Accept
+        <br>
+        <br>
+        Declaro haber leído y aceptar las condiciones 
+        generales del programa y la normativa sobre protección de datos
+        <br>
+        <br>
+        <input type="checkbox">Accept
+        <br>
+        <br>
+        Deseo recibir información sobre novedades y 
+        ofertas
+        <br>
+        <br>
+        <input type="checkbox"checked>Accept
+        <br>
+        <br>
+        <br>
+        Poblacion:
+        <select>
+            <option>Orizaba</option>
+            <option>Cordoba</option>
+            <option>Xalapa</option>
+            <option>Veracruz</option>
+        </select>
+        <br>
+            <button>Enviar</button>
+        </select>
+    </form>
+</body>
+</html>
